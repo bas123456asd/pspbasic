@@ -6,3 +6,5 @@ while ($i <= $n) {
     echo "$i\n";
     $i+-2;
 }
+pow($i,2);
+?>
