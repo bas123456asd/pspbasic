@@ -28,6 +28,11 @@
                         <option value=นาง>นาง</option> 
                 </select>
                 </td>
+                <tr>
+                    <td>Name :</td>
+                    <td><Input type="text" name="Name"></td>
+                </tr>
+                <tr>
                 <td>Sex : </td>
                     <td>
                     <input type="radio" name="Sex" value="ชา่ย"> ชา่ย
@@ -66,12 +71,23 @@
                         while ($objResult = mysqli_fetch_array($objQuery)){
                             ?>
                         <option value=<?php echo $objResult["DepartmentID"]; ?>><?php
-                        echo$
-
-                    <td><inpur type="number" name="Salary"></td>
+                        echo$ $objResult["DepartmentID"]; ?></option>
+                         <?php
+                        }
+                        ?>
+                    </select>
+                    </td>
                 </tr>
             </table>
-        <!-- optional JavaScript ; choose one of the two! -->
+            <br>
+            <input type="submit" value="Update Data">
+        </form>
+        <?php
+        mysqli_close($conn); // ปิดฐานข้อมูล
+        echo "<br><br>";
+        echo "--- END ---";
+        ?>                 
+        <!-- Optional JavaScript ; choose one of the two! -->
         <!-- Option 1;  Bootstrap Bundle with Popper -- >
     <script src = "bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

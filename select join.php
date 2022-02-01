@@ -74,6 +74,8 @@ $objQuery = mysqli_query($conn , $sql) or die("ErrorQuery [" . $sql .)
             <td><?php echo $objResult["DepartmentName"]; ?></div>   
             <td align="center"><a href="delete.php?EmployeeID=<?php echo $objResult
             ["EmployeeID"]; ?>">Delete</a></td>
+            <td align="center"><a href="updatedata.php?EmployeeID=<?php echo $objResult
+            ["EmployeeID"]; ?>">Update</a></td>
         </tr>    
      <?php
         $i++;
